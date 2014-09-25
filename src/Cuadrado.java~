@@ -1,0 +1,77 @@
+
+public class Cuadrado {
+
+	static final double NUM_PI = 3.1416;
+
+	private double alto1 = 0;
+	private double telmo = 0;
+	private double result;	  
+	private double area;
+	private double perimetro;
+
+	//Método que dado el radio calcula la circunferencia de un círculo.
+	//public double circunferencia(double radio) {
+	public double perimetro() {
+
+		double resultadoPerimetro;
+
+		//result = 2*NUM_PI*radio;
+		resultadoPerimetro = 2*this.getAlto()+ 2* this.getAncho();
+		return resultadoPerimetro;
+	}
+
+	//Método que dado el radio calcula el area de un círculo.
+	//public double area(double radio) {
+	public double area() {
+
+		double resultadoArea;
+
+		resultadoArea =this.getAlto()*this.getAncho();
+
+		return resultadoArea;
+	}
+
+	public double getAlto() {
+
+		return alto1;
+	}	
+
+	public void setAlto(double alto) {
+
+		alto1 = alto;
+	} 
+
+        public double getAncho() {
+
+		return telmo;
+	}	
+
+	public void setAncho(double ancho) {
+
+		telmo = ancho;
+	} 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
